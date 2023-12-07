@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quize App</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body>
+    <h1>Quize App</h1>
+    <!-- Info category -->
+    <div class="header" id="info-cont">
+      <h3>Welcome To The Quize Competition</h3> 
+      <ul class="rules-cont">Rules: 
+        <li>1. You have 5 minutes to complete the Quize.</li>
+        <li>2. You got only one chance to select your Answer.</li>
+        <li>3. This Quize will help you to improve your GK knowladge.</li>
+      </ul> 
+      <button class="start-btn" id="start-btn">Attempt Quize</button>
+    </div>
+    <!-- This is the QUIZE Container -->
+    <div class="quize-container" id="quize-cont">
+      <span class="timer">TIME Left : <span id="chng-timer">00:00</span> min</span>
+      <p class="question-tag"></p>
+      <ul class="opt-container">
+        <!-- All li and input are append here -->
+      </ul> 
+      <button class="next-btn" id="next-btn">Next</button> 
+    </div>
+    <!-- Answer Container -->
+    <div class="ans-cont">
+        <p class="ans-tag">00/00</p>
+        <p class="acc">Accuracy : 00.00%</p>
+    </div>
+</body>
+<script src="./script.js"></script>
+</html>
